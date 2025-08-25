@@ -1,9 +1,11 @@
+import BestSellers from "../BestSellers/BestSellers";
 import { ChartAreaAxes } from "../Graph/ChartAreaAxes";
 
 const GraphAndBestsellers = () => {
   return (
-    <div className="h-[300px] w-[100%]">
+    <div className="flex gap-[20px]">
       <ChartAreaAxes />
+      <BestSellers />
     </div>
   );
 };
