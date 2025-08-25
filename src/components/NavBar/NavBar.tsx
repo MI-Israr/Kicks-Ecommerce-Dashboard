@@ -4,7 +4,7 @@ import NotificationsDropdown from "./NotificationDropdown/NotificationsDropdown"
 import BellOne from "/src/assets/bell.svg";
 import BellTwo from "/src/assets/bell-2.svg";
 import "./Search/Search.css";
-import { AdminDropdown } from "./AdminDropdown";
+import { AdminDropdown } from "../AdminDropDown/AdminDropdown";
 // import Search from "./Search/Search";
 
 const NavBar = () => {

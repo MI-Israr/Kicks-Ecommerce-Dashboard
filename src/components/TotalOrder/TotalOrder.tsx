@@ -1,22 +1,13 @@
-import React from "react";
+import { comparisonCardData } from "@/Data/comparisonCardData";
+import type { comparisonCardDataTypes } from "@/Data/comparisonCardData";
+import StatsCard from "./StatsCard";
 
 const TotalOrder = () => {
   return (
-    <div>
-      <div>
-        <h3></h3>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div>
-          <h3></h3>
-          <p></p>
-        </div>
-      </div>
-      <div>
-        <p></p>
-      </div>
+    <div className="grid grid-cols-3 w-[100%] gap-[20px]">
+      {comparisonCardData.map((data: comparisonCardDataTypes) => (
+        <StatsCard data={data} key={data.title} />
+      ))}
     </div>
   );
 };
