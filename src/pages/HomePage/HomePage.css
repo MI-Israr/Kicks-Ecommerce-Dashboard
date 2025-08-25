@@ -1,0 +1,168 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 240px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  padding: 5px 20px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 90px;
+}
+
+.menu {
+  flex: 1;
+  padding: 10px 10px 0 10px;
+}
+
+.menu-item {
+  display: block;
+  display: flex;
+  gap: 10px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: #333;
+  text-decoration: none;
+  background: white;
+  font-size: 14px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+
+.category p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.menu-item.active {
+  background: #2563eb;
+  color: white;
+}
+
+.admin {
+  position: relative;
+}
+
+.submenu-items {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.submenu-items a {
+  font-size: 13px;
+  color: #555;
+  padding: 5px 0;
+  text-decoration: none;
+}
+
+.submenu-items a:hover {
+  color: #000;
+}
+
+.sidebar-footer {
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  color: #777;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  height: 65px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.left-icons,
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.admin select {
+  margin-left: 5px;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+.content {
+  flex: 1;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  font-size: 18px;
+}
+
+.footer {
+  height: 35px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  font-size: 12px;
+  padding: 0 20px;
+}
+
+.footer a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.search {
+  cursor: pointer;
+}
+.admin button {
+  cursor: pointer;
+}
+
+.bell {
+  display: relative;
+  cursor: pointer;
+}
