@@ -1,5 +1,6 @@
 import GraphAndBestsellers from "@/components/GraphAndBestsellers/GraphAndBestsellers";
 import Header from "@/components/Header/Header";
+import RecentOrders from "@/components/RecentOrders/RecentOrders";
 import TotalOrder from "@/components/TotalOrder/TotalOrder";
 
 const DashBoard = () => {
@@ -8,6 +9,7 @@ const DashBoard = () => {
       <Header />
       <TotalOrder />
       <GraphAndBestsellers />
+      <RecentOrders />
     </div>
   );
 };
