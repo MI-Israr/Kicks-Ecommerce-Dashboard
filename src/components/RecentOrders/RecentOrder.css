@@ -5,5 +5,9 @@
 
 td,
 th {
-  padding: 8px 12px;
+  padding: 28px 12px 8px 12px;
+}
+
+th {
+  color: rgba(35, 35, 33, 0.8);
 }
