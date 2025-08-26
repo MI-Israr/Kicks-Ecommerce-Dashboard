@@ -6,7 +6,7 @@ import TotalOrder from "@/components/TotalOrder/TotalOrder";
 const DashBoard = () => {
   return (
     <div className="flex flex-col gap-[20px]">
-      <PageTitle title={"Dashboard"} />
+      <PageTitle title={"Dashboard"} rightSideType="date" />
       <TotalOrder />
       <GraphAndBestsellers />
       <RecentOrders />

@@ -7,7 +7,6 @@ const SideBar = () => {
     <aside className="sidebar">
       <Logo />
       <Menu />
-      <div className="sidebar-footer">© 2023 - Kicks Dashboard</div>
     </aside>
   );
 };

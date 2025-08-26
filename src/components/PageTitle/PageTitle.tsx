@@ -1,26 +1,18 @@
+import LeftSide from "./LeftSide";
+import RightSideButton from "./RightSideButton";
+import RightSideDate from "./RightSideDate";
+
 interface headerTitle {
   title: string;
+  rightSideType?: "date" | "button";
 }
 
-const PageTitle: React.FC<headerTitle> = ({ title }) => {
+const PageTitle: React.FC<headerTitle> = ({ title, rightSideType }) => {
   return (
     <div className="flex items-center justify-between w-[100%]">
-      <div className="flex flex-col">
-        <h1 className="text-[24px] font-bold">{title}</h1>
-        <div className="flex gap-[4px]">
-          <p>Home</p>
-          <span>&gt;</span>
-          <p>{title}</p>
-        </div>
-      </div>
-      <div className="flex gap-[8px] self-end">
-        <img src="/src/assets/calendar.svg" alt="" />
-        <div className="flex gap-[4px] ">
-          <p>Aug 20, 2025</p>
-          <span>-</span>
-          <p>Aug 25, 2025</p>
-        </div>
-      </div>
+      <LeftSide title={title} />
+      {rightSideType === "date" && <RightSideDate />}
+      {rightSideType === "button" && <RightSideButton />}
     </div>
   );
 };
