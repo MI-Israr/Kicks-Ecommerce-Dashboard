@@ -8,13 +8,28 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ChevronRight, LogOut } from "lucide-react";
+import ArrowDown from "/src/assets/down.svg";
+import ArrowUp from "/src/assets/arrow-up.svg";
+import { useState } from "react";
 
 export function AdminDropdown() {
+  const [opened, setOpened] = useState(false);
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className="w-24">
+        <Button
+          variant="outline"
+          className="w-24 cursor-pointer !text-[16px]"
+          onClick={() => setOpened((prev) => !prev)}
+        >
           Admin
+          <span>
+            <img
+              className="w-[15px]"
+              src={opened ? ArrowUp : ArrowDown}
+              alt=""
+            />
+          </span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56 rounded-lg border border-gray-200 shadow-md !p-4 flex  flex-col gap-3">
