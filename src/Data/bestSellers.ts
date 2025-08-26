@@ -90,6 +90,12 @@ export const bestSellers: BestSellersData = {
       price: 140.5,
       sales: 999,
     },
+    {
+      img: "/src/assets/notifications-image.png",
+      title: "Adidas Ultra boost",
+      price: 140.5,
+      sales: 999,
+    },
   ],
 
   footer: {

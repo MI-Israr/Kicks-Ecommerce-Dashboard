@@ -1,12 +1,16 @@
-const Header = () => {
+interface headerTitle {
+  title: string;
+}
+
+const PageTitle: React.FC<headerTitle> = ({ title }) => {
   return (
     <div className="flex items-center justify-between w-[100%]">
       <div className="flex flex-col">
-        <h1 className="text-[24px] font-bold">Dashboard</h1>
+        <h1 className="text-[24px] font-bold">{title}</h1>
         <div className="flex gap-[4px]">
           <p>Home</p>
           <span>&gt;</span>
-          <p>Dashboard</p>
+          <p>{title}</p>
         </div>
       </div>
       <div className="flex gap-[8px] self-end">
@@ -21,4 +25,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default PageTitle;

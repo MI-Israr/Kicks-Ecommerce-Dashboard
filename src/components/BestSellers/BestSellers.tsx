@@ -6,7 +6,7 @@ import BestSellersFooter from "./BestSellersFooter";
 
 const BestSellers = () => {
   return (
-    <div className="!p-[20px] flex flex-col gap-[10px] rounded-2xl bg-white h-[320px]">
+    <div className="!p-[20px] flex flex-col gap-[10px] rounded-2xl bg-white ">
       <BestSellersHeader
         title={bestSellers.header.title}
         img={bestSellers.header.threeDots}

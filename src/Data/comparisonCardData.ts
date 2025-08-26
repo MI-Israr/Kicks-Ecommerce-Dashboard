@@ -17,7 +17,7 @@ export const comparisonCardData: comparisonCardDataTypes[] = [
     compare: "Jan 2025",
   },
   {
-    title: "Total Orders",
+    title: "Active Orders",
     menuImg: "/src/assets/three-dots-vertical-bold.svg",
     icon: "/src/assets/bag_handle.svg",
     price: 126.5,
@@ -25,7 +25,7 @@ export const comparisonCardData: comparisonCardDataTypes[] = [
     compare: "Jan 2025",
   },
   {
-    title: "Total Orders",
+    title: "Shipped Orders",
     menuImg: "/src/assets/three-dots-vertical-bold.svg",
     icon: "/src/assets/bag_handle.svg",
     price: 126.5,

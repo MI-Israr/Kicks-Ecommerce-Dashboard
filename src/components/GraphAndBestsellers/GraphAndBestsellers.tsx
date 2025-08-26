@@ -1,10 +1,10 @@
 import BestSellers from "../BestSellers/BestSellers";
-import { ChartAreaAxes } from "../Graph/ChartAreaAxes";
+import Graph from "../Graph/Graph";
 
 const GraphAndBestsellers = () => {
   return (
-    <div className="flex gap-[20px]">
-      <ChartAreaAxes />
+    <div className="flex gap-[20px] w-full">
+      <Graph />
       <BestSellers />
     </div>
   );

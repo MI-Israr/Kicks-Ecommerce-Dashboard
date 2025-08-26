@@ -1,5 +1,11 @@
+import PageTitle from "@/components/PageTitle/PageTitle";
+
 const AllProducts = () => {
-  return <div>AllProducts</div>;
+  return (
+    <div>
+      <PageTitle title="All Products" />
+    </div>
+  );
 };
 
 export default AllProducts;
