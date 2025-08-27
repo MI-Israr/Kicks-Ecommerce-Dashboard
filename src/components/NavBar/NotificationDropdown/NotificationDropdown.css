@@ -1,5 +1,6 @@
 .notifications-container {
   position: absolute;
+  z-index: 100;
   right: 6%;
   top: 9%;
   background: white;

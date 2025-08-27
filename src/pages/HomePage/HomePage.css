@@ -164,3 +164,23 @@
   display: relative;
   cursor: pointer;
 }
+
+.hamburger {
+  display: none;
+}
+
+.left-icons .logo {
+  display: none;
+}
+
+@media screen and (max-width: 996px) {
+  .sidebar {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .left-icons .logo {
+    display: flex;
+  }
+}

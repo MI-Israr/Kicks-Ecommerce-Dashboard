@@ -6,12 +6,15 @@ import { BrowserRouter } from "react-router-dom";
 import "@mantine/core/styles.css";
 import "@mantine/charts/styles.css";
 import { MantineProvider } from "@mantine/core";
+import AppProvider from "./Context/Context";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <MantineProvider>
-        <App />
+        <AppProvider>
+          <App />
+        </AppProvider>
       </MantineProvider>
     </BrowserRouter>
   </StrictMode>

@@ -4,13 +4,18 @@ import RightSideDate from "./RightSideDate";
 
 interface headerTitle {
   title: string;
+  subTitle?: string;
   rightSideType?: "date" | "button";
 }
 
-const PageTitle: React.FC<headerTitle> = ({ title, rightSideType }) => {
+const PageTitle: React.FC<headerTitle> = ({
+  title,
+  subTitle,
+  rightSideType,
+}) => {
   return (
     <div className="flex items-center justify-between w-[100%]">
-      <LeftSide title={title} />
+      <LeftSide title={title} subTitle={subTitle} />
       {rightSideType === "date" && <RightSideDate />}
       {rightSideType === "button" && <RightSideButton />}
     </div>
