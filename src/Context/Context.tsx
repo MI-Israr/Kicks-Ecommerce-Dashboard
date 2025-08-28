@@ -1,13 +1,21 @@
-import React, { createContext } from "react";
+import React, { createContext, useState } from "react";
+import type { OrderStatus } from "@/Data/recentOrder";
 
 export type AppContextType = {
-  // Extend later if needed
+  filter: OrderStatus | null;
+  setFilter: (status: OrderStatus | null) => void;
 };
 
 export const AppContext = createContext<AppContextType>({} as AppContextType);
 
 const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  return <AppContext.Provider value={{}}>{children}</AppContext.Provider>;
+  const [filter, setFilter] = useState<OrderStatus | null>(null);
+
+  return (
+    <AppContext.Provider value={{ filter, setFilter }}>
+      {children}
+    </AppContext.Provider>
+  );
 };
 
 export default AppProvider;
