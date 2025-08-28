@@ -2,11 +2,16 @@ import "../../pages/HomePage/HomePage.css";
 import Logo from "./Logo";
 import Menu from "./Menu";
 
-const SideBar = () => {
+interface SideBarProps {
+  isOpen: boolean;
+  setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const SideBar: React.FC<SideBarProps> = ({ isOpen, setIsSidebarOpen }) => {
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${isOpen ? "open" : ""}`}>
       <Logo />
-      <Menu />
+      <Menu setIsSidebarOpen={setIsSidebarOpen} />
     </aside>
   );
 };

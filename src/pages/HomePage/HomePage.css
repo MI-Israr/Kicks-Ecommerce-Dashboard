@@ -10,6 +10,7 @@
   border-right: 1px solid #ddd;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease-in-out;
 }
 
 .logo {
@@ -175,10 +176,21 @@
 
 @media screen and (max-width: 996px) {
   .sidebar {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
   }
   .hamburger {
     display: block;
+    cursor: pointer;
   }
   .left-icons .logo {
     display: flex;
