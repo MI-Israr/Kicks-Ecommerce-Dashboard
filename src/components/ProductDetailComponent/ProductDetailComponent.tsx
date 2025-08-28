@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import { productDetailCard } from "@/Data/productDetailCard";
-import ProductDetailForm from "../../pages/ProductDetails/ProductDetailForm";
-import ProductsDetailRight from "../../pages/ProductDetails/ProductsDetailRight";
-import ProductDetailRightButtons from "../../pages/ProductDetails/ProductDetailRightButtons";
+import ProductDetailForm from "./ProductDetailForm";
+import ProductsDetailRight from "./ProductsDetailRight";
+import ProductDetailRightButtons from "./ProductDetailRightButtons";
 const ProductDetailComponent = () => {
   const { id } = useParams();
   const product = productDetailCard.find((p) => p.id === Number(id));
