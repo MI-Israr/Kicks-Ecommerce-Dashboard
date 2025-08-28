@@ -3,7 +3,7 @@ import Graph from "../Graph/Graph";
 
 const GraphAndBestsellers = () => {
   return (
-    <div className="flex gap-[20px] w-full">
+    <div className="flex gap-[12px] allProduct:gap-[20px] md:flex-row flex-col w-full">
       <Graph />
       <BestSellers />
     </div>

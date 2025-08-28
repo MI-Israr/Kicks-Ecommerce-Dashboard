@@ -6,7 +6,7 @@ interface bestSellingItemData {
 
 const BestSellingItem: React.FC<bestSellingItemData> = ({ item }) => {
   return (
-    <div className="w-[360px] flex items-center gap-[8px]">
+    <div className="min-w-[360px] max-w-[100%] bg-[#FAFAFA] !p-2 flex items-center gap-[8px]">
       <div className="">
         <img src={item.img} alt="" />
       </div>

@@ -36,10 +36,10 @@ export default function SalesGraph() {
   const [filter, setFilter] = useState("monthly");
 
   return (
-    <Card shadow="sm" radius="md" withBorder className="w-full bg-gray-100">
+    <Card padding={20} radius="lg" withBorder className="w-full bg-gray-100">
       {/* Title + Buttons */}
-      <Group justify="space-between" mb="sm">
-        <Text fw={700} size="lg">
+      <Group justify="space-between">
+        <Text fw={700} size="xl">
           Sale Graph
         </Text>
         <Group gap="xs">
@@ -59,7 +59,7 @@ export default function SalesGraph() {
         </Group>
       </Group>
 
-      <Divider my="sm" />
+      <Divider my="sm" color="black" />
 
       {/* Graph */}
       <AreaChart

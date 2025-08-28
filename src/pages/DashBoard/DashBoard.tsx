@@ -5,7 +5,7 @@ import TotalOrder from "@/components/TotalOrder/TotalOrder";
 
 const DashBoard = () => {
   return (
-    <div className="flex flex-col gap-[20px]">
+    <div className="flex flex-col gap-[10px] allProduct:gap-[20px]">
       <PageTitle title={"Dashboard"} rightSideType="date" />
       <TotalOrder />
       <GraphAndBestsellers />
