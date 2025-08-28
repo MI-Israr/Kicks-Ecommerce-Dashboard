@@ -63,3 +63,9 @@
   background: #07051a;
   color: white;
 }
+
+@media screen and (max-width: 400px) {
+  .search-form {
+    display: none;
+  }
+}

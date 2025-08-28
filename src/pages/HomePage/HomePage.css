@@ -132,14 +132,14 @@
 }
 
 .footer {
-  height: 39px;
+  /* height: 39px; */
   background: #fff;
   border-top: 1px solid #ddd;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 12px;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 .footer-links {
@@ -191,6 +191,9 @@
   }
   .footer {
     padding: 10px;
+    flex-direction: column;
+
+    gap: 10px;
   }
   .logo {
     padding: 5px 0px;

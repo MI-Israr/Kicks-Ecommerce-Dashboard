@@ -3,10 +3,9 @@ import "../../pages/HomePage/HomePage.css";
 import NotificationsDropdown from "./NotificationDropdown/NotificationsDropdown";
 import BellOne from "/src/assets/bell.svg";
 import BellTwo from "/src/assets/bell-2.svg";
-import "./Search/Search.css";
 import { AdminDropdown } from "../AdminDropDown/AdminDropdown";
 import Logo from "../SideBar/Logo";
-// import Search from "./Search/Search";
+import Search from "./Search/Search";
 
 const NavBar = () => {
   const [notification, setNotification] = useState(false);
@@ -22,19 +21,7 @@ const NavBar = () => {
         <Logo />
       </div>
       <div className="right-icons">
-        <form action="" className="search-form">
-          <input
-            type="search"
-            placeholder="Search Here..."
-            className="search-input"
-            // onChange={() => setSearch((prev) => !prev)}
-          />
-          <i className="fa fa-search"></i>
-        </form>
-        {/* {search && <NotificationsDropdown />} */}
-        {/* <div className="search">
-          <Search />
-        </div> */}
+        <Search />
         <div className="bell" onClick={handleNotification}>
           <img src={notification ? BellTwo : BellOne} alt="" />
         </div>

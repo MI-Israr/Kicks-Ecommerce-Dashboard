@@ -7,7 +7,7 @@ interface ProductDetailFormProps {
 
 const ProductDetailForm: React.FC<ProductDetailFormProps> = ({ product }) => {
   return (
-    <form className=" flex flex-col gap-6 w-full">
+    <form className=" flex flex-col gap-5 md:gap-6 w-full">
       <div className="flex flex-col gap-1">
         <label className="font-medium text-lg">Product Name</label>
         <input
