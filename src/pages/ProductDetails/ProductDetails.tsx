@@ -1,5 +1,5 @@
 import PageTitle from "@/components/PageTitle/PageTitle";
-import ProductDetailComponent from "./ProductDetailComponent";
+import ProductDetailComponent from "../../components/ProductDetailComponent/ProductDetailComponent";
 
 function ProductDetails() {
   return (
