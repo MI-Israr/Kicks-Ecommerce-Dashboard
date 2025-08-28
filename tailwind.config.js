@@ -5,8 +5,8 @@ export default {
   theme: {
     screens: {
       xs: "480px",
-      tablet: "769px",
-      laptop: "1100px",
+      laptop: "1245px",
+      allProduct: "700px",
       sm: "640px", // optional, default Tailwind
       md: "768px",
       lg: "1024px",

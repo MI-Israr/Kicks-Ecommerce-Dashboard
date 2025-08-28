@@ -65,7 +65,7 @@ export const productDetailCard: productDetailCardType[] = [
   {
     id: 4,
     img: "/src/assets/runner-4.png",
-    title: "ADIZERO SL RUNNING",
+    title: "Adizero sl Running",
     category: "Runner",
     regularPrice: 140,
     summary: "Long distance running requires a lot from athletes.",
@@ -80,7 +80,7 @@ export const productDetailCard: productDetailCardType[] = [
   {
     id: 5,
     img: "/src/assets/sneaker-5.png",
-    title: "ULTRABOOST CLEATS",
+    title: "UltraBoost Cleats ",
     category: "Sneaker",
     regularPrice: 140,
     summary: "Long distance running requires a lot from athletes.",
@@ -95,7 +95,7 @@ export const productDetailCard: productDetailCardType[] = [
   {
     id: 6,
     img: "/src/assets/sneaker-6.png",
-    title: "FORUM EXHIBIT LOW ",
+    title: "Forum Exhibit Low",
     category: "Sneaker",
     regularPrice: 140,
     summary: "Long distance running requires a lot from athletes.",

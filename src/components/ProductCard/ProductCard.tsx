@@ -3,7 +3,7 @@ import ProductCardMap from "./ProductCardMap";
 
 const ProductCard = () => {
   return (
-    <div className="w-full grid lg:grid-cols-3 gap-[1.25rem]">
+    <div className="w-full grid allProduct:grid-cols-2 xl:grid-cols-3 md:gap-[1.25rem] gap-[1rem]">
       <ProductCardMap productDetailCard={productDetailCard} />
     </div>
   );

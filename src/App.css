@@ -11,8 +11,8 @@
 
 @theme {
   --breakpoint-xs: 480px;
-  --breakpoint-tablet: 769px;
-  --breakpoint-laptop: 1100px;
+  --breakpoint-laptop: 1245px;
+  --breakpoint-allProduct: 680px;
 }
 
 @theme inline {
