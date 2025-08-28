@@ -1,15 +1,3 @@
-// import PageTitle from "@/components/PageTitle/PageTitle";
-
-// const ProductDetails = () => {
-//   return (
-//     <div>
-//       <PageTitle title="Product Details" />
-//     </div>
-//   );
-// };
-
-// export default ProductDetails;
-
 import PageTitle from "@/components/PageTitle/PageTitle";
 import ProductDetailComponent from "./ProductDetailComponent";
 

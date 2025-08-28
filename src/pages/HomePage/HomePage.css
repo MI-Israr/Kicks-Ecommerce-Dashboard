@@ -184,3 +184,15 @@
     display: flex;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 10px;
+  }
+  .footer {
+    padding: 10px;
+  }
+  .logo {
+    padding: 5px 0px;
+  }
+}

@@ -9,6 +9,7 @@ export type productDetailCardType = {
   summary: string;
   sales: number;
   remaining: number;
+  sku: number;
   brandName?: string;
   stockQuantity?: number;
   salesPrice?: number;
@@ -25,6 +26,7 @@ export const productDetailCard: productDetailCardType[] = [
     summary: "Long distance running requires a lot from athletes.",
     sales: 1269,
     remaining: 1269,
+    sku: 25425,
     brandName: "Addidas",
     stockQuantity: 21,
     salesPrice: 45,
@@ -39,6 +41,7 @@ export const productDetailCard: productDetailCardType[] = [
     summary: "Long distance running requires a lot from athletes.",
     sales: 1269,
     remaining: 1269,
+    sku: 25425,
     brandName: "Addidas",
     stockQuantity: 21,
     salesPrice: 45,
@@ -53,6 +56,7 @@ export const productDetailCard: productDetailCardType[] = [
     summary: "Long distance running requires a lot from athletes.",
     sales: 1269,
     remaining: 1269,
+    sku: 25425,
     brandName: "Addidas",
     stockQuantity: 21,
     salesPrice: 45,
@@ -67,6 +71,7 @@ export const productDetailCard: productDetailCardType[] = [
     summary: "Long distance running requires a lot from athletes.",
     sales: 1269,
     remaining: 1269,
+    sku: 25425,
     brandName: "Addidas",
     stockQuantity: 21,
     salesPrice: 45,
@@ -81,6 +86,7 @@ export const productDetailCard: productDetailCardType[] = [
     summary: "Long distance running requires a lot from athletes.",
     sales: 1269,
     remaining: 1269,
+    sku: 25425,
     brandName: "Addidas",
     stockQuantity: 21,
     salesPrice: 45,
@@ -95,6 +101,7 @@ export const productDetailCard: productDetailCardType[] = [
     summary: "Long distance running requires a lot from athletes.",
     sales: 1269,
     remaining: 1269,
+    sku: 25425,
     brandName: "Addidas",
     stockQuantity: 21,
     salesPrice: 45,
