@@ -4,7 +4,7 @@ import StatsCard from "./StatsCard";
 
 const TotalOrder = () => {
   return (
-    <div className="grid  allProduct:grid-cols-3 w-[100%] gap-[12px] allProduct:gap-[20px]">
+    <div className="grid allProduct:grid-cols-3 w-[100%] gap-[12px] allProduct:gap-[20px]">
       {comparisonCardData.map((data: comparisonCardDataTypes) => (
         <StatsCard data={data} key={data.title} />
       ))}

@@ -1,5 +1,7 @@
 import type { productDetailCardType } from "@/Data/productDetailCard";
 import TagsArea from "./TagsArea";
+import ProductDetailInput from "./ProductDetailInput";
+import ProductDetailTextArea from "./ProductDetailTextArea";
 
 interface ProductDetailFormProps {
   product: productDetailCardType;
@@ -8,85 +10,57 @@ interface ProductDetailFormProps {
 const ProductDetailForm: React.FC<ProductDetailFormProps> = ({ product }) => {
   return (
     <form className=" flex flex-col gap-5 md:gap-6 w-full">
-      <div className="flex flex-col gap-1">
-        <label className="font-medium text-lg">Product Name</label>
-        <input
+      <ProductDetailInput
+        label="Product Name"
+        placeholder="Enter product name"
+        type="text"
+        product={product.title}
+      />
+      <ProductDetailTextArea
+        label="Description"
+        row={3}
+        placeholder="Enter description"
+        product={product.summary}
+      />
+      <ProductDetailInput
+        label="Category"
+        type="text"
+        placeholder="Category"
+        product={product.category}
+      />
+      <ProductDetailInput
+        label="Brand Name"
+        type="text"
+        placeholder="Brand"
+        product={product.brandName}
+      />
+      <div className="grid grid-cols-2 gap-4">
+        <ProductDetailInput
+          label="SKU"
           type="text"
-          placeholder="Enter product name"
-          className="border border-[#232321] rounded-lg !px-3 !py-2 focus:outline-none focus:ring focus:ring-purple-400"
-          defaultValue={product.title}
+          placeholder="SKU"
+          product={`#${product.sku}`}
         />
-      </div>
-
-      <div className="flex flex-col gap-1 text-lg">
-        <label className="font-medium">Description</label>
-        <textarea
-          rows={3}
-          placeholder="Enter description"
-          className="border border-[#232321] rounded-lg !px-3 !py-2 focus:outline-none focus:ring focus:ring-purple-400"
-          defaultValue={product.summary}
-        />
-      </div>
-
-      <div className="flex flex-col gap-1">
-        <label className="font-medium">Category</label>
-        <input
-          type="text"
-          placeholder="Category"
-          className="border border-[#232321] rounded-lg !px-3 !py-2 focus:outline-none focus:ring focus:ring-purple-400"
-          defaultValue={product.category}
-        />
-      </div>
-
-      <div className="flex flex-col gap-1">
-        <label className="font-medium">Brand Name</label>
-        <input
-          type="text"
-          placeholder="Brand"
-          className="border border-[#232321] rounded-lg !px-3 !py-2 focus:outline-none focus:ring focus:ring-purple-400"
-          defaultValue={product.brandName}
+        <ProductDetailInput
+          label="Stock Quantity"
+          type="number"
+          placeholder="SKU"
+          product={product.stockQuantity}
         />
       </div>
       <div className="grid grid-cols-2 gap-4">
-        <div className="flex flex-col gap-1">
-          <label className="font-medium">SKU</label>
-          <input
-            type="text"
-            placeholder="SKU"
-            className="border border-[#232321] rounded-lg !px-3 !py-2 focus:outline-none focus:ring focus:ring-purple-400"
-            defaultValue={`#${product.sku}`}
-          />
-        </div>
-        <div className="flex flex-col gap-1">
-          <label className="font-medium">Stock Quantity</label>
-          <input
-            type="number"
-            placeholder="Stock"
-            className="border border-[#232321] rounded-lg !px-3 !py-2 focus:outline-none focus:ring focus:ring-purple-400"
-            defaultValue={product.stockQuantity}
-          />
-        </div>
-      </div>
-
-      <div className="grid grid-cols-2 gap-4">
-        <div className="flex flex-col gap-1">
-          <label className="font-medium">Regular Price</label>
-          <input
-            type="text"
-            placeholder="Price"
-            className="border border-[#232321] rounded-lg !px-3 !py-2 focus:outline-none focus:ring focus:ring-purple-400"
-            defaultValue={product.regularPrice}
-          />
-        </div>
-        <div className="flex flex-col gap-1">
-          <label className="font-medium">Sale Price</label>
-          <input
-            type="text"
-            placeholder="Sale Price"
-            className="border border-[#232321] rounded-lg !px-3 !py-2 focus:outline-none focus:ring focus:ring-purple-400"
-            defaultValue={product.salesPrice}
-          />
-        </div>
+        <ProductDetailInput
+          label="Regular Price"
+          type="number"
+          placeholder="Price"
+          product={product.regularPrice}
+        />
+        <ProductDetailInput
+          label="Sale Price"
+          type="number"
+          placeholder="Sale Price"
+          product={product.salesPrice}
+        />
       </div>
       <TagsArea product={product} />
     </form>
