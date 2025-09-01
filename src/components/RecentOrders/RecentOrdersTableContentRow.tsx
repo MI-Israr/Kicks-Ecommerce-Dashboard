@@ -1,4 +1,5 @@
 import type { RecentOrder } from "@/Data/recentOrder";
+import { useNavigate } from "react-router-dom";
 
 interface RecentOrdersTableContentRowProps {
   order: RecentOrder;
@@ -7,15 +8,17 @@ interface RecentOrdersTableContentRowProps {
 const RecentOrdersTableContentRow: React.FC<
   RecentOrdersTableContentRowProps
 > = ({ order }) => {
+  const navigate = useNavigate();
   return (
     <tr
       style={{ padding: "30px" }}
-      className="text-center text-[14px] border-b border-gray-300"
+      className="text-center text-[14px] border-b border-gray-300 hover:cursor-pointer"
+      onClick={() => navigate(`/product-details/${order.orderId}`)}
     >
       <td className="text-start">
         <input type="checkbox" name="" id="" />
       </td>
-      <td className="text-start">{order.product}</td>
+      <td className="text-start">{order.product} </td>
       <td>#{order.orderId}</td>
       <td>{order.date}</td>
       <td>{order.customerName}</td>

@@ -6,6 +6,7 @@ import AllProducts from "./pages/All Products/AllProducts";
 import OrdersList from "./pages/Orders List/OrdersList";
 import DashBoard from "./pages/DashBoard/DashBoard";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import OrderDetail from "./pages/OrderDetail/OrderDetail";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route index element={<DashBoard />} />
         <Route path="/products" element={<AllProducts />} />
         <Route path="/orders" element={<OrdersList />} />
+        <Route path="/orders-detail/:id" element={<OrderDetail />} />
         <Route path="/product-details/:id" element={<ProductDetails />} />
       </Route>
     </Routes>

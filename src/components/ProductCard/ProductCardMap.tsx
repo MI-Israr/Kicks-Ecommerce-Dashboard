@@ -8,8 +8,8 @@ interface productData {
 const ProductCardMap: React.FC<productData> = ({ productDetailCard }) => {
   return (
     <>
-      {productDetailCard.map((item: productDetailCardType) => (
-        <ProductCardData item={item} />
+      {productDetailCard.map((item: productDetailCardType, index: number) => (
+        <ProductCardData item={item} key={index} />
       ))}
     </>
   );
