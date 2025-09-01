@@ -1,11 +1,18 @@
 import type { productDetailCardType } from "@/Data/productDetailCard";
 import React, { useState } from "react";
+import type { UseFormRegisterReturn } from "react-hook-form";
 
 interface TagsAreaProps {
   product: productDetailCardType;
+  registration?: UseFormRegisterReturn;
+  error?: string;
 }
 
-const TagsArea: React.FC<TagsAreaProps> = ({ product }) => {
+const TagsArea: React.FC<TagsAreaProps> = ({
+  product,
+  registration,
+  error,
+}) => {
   const [tags, setTags] = useState<string[]>(product.tags || []);
 
   const handleKeyDown = (
@@ -18,6 +25,8 @@ const TagsArea: React.FC<TagsAreaProps> = ({ product }) => {
         setTags([...tags, input]);
       }
       e.currentTarget.value = "";
+    } else if (e.key === "Backspace" && e.currentTarget.value === "") {
+      setTags(tags.slice(0, -1));
     }
   };
 
@@ -28,7 +37,7 @@ const TagsArea: React.FC<TagsAreaProps> = ({ product }) => {
     <div className="flex flex-col gap-2">
       <label className="font-medium">Tags</label>
       <div className="flex gap-2 flex-wrap border border-[#232321] rounded-lg !p-2">
-        {tags.map((tag) => (
+        {tags.map((tag: string) => (
           <span
             key={tag}
             className="flex items-center h-[30px] gap-2 !px-3 !py-1 bg-[#36323B] text-white rounded-full text-sm"
@@ -36,7 +45,7 @@ const TagsArea: React.FC<TagsAreaProps> = ({ product }) => {
             {tag}
             <button
               type="button"
-              className="text-white text-xs hover:text-red-400"
+              className="text-white text-xs hover:text-red-400 cursor-pointer"
               onClick={() => removeTag(tag)}
             >
               ✕

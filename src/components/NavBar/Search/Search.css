@@ -50,7 +50,7 @@
 }
 
 .search-form:hover {
-  width: 190px;
+  width: 300px;
   cursor: pointer;
   border: 1.5px solid rgb(0, 0, 0);
 }

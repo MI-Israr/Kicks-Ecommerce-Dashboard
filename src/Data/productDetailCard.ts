@@ -13,7 +13,20 @@ export type productDetailCardType = {
   brandName?: string;
   stockQuantity?: number;
   salesPrice?: number;
-  tags?: [string, ...string[]];
+  // tags?: [string, ...string[]];
+  tags?: string[];
+};
+
+export type ProductFormValues = {
+  title: string;
+  summary: string;
+  category: "Sneaker" | "Runner" | "Casual";
+  sku: number;
+  regularPrice: number;
+  stockQuantity: number;
+  brandName: string;
+  salesPrice: number;
+  tags: string[];
 };
 
 export const productDetailCard: productDetailCardType[] = [
