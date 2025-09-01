@@ -85,11 +85,7 @@ const ProductDetailForm: React.FC<ProductDetailFormProps> = ({ product }) => {
           error={errors.salesPrice?.message}
         />
       </div>
-      <TagsArea
-        registration={register("tags")}
-        error={errors.tags?.message}
-        product={product}
-      />
+      <TagsArea product={product} />
     </form>
   );
 };

@@ -1,18 +1,11 @@
 import type { productDetailCardType } from "@/Data/productDetailCard";
 import React, { useState } from "react";
-import type { UseFormRegisterReturn } from "react-hook-form";
 
 interface TagsAreaProps {
   product: productDetailCardType;
-  registration?: UseFormRegisterReturn;
-  error?: string;
 }
 
-const TagsArea: React.FC<TagsAreaProps> = ({
-  product,
-  registration,
-  error,
-}) => {
+const TagsArea: React.FC<TagsAreaProps> = ({ product }) => {
   const [tags, setTags] = useState<string[]>(product.tags || []);
 
   const handleKeyDown = (
