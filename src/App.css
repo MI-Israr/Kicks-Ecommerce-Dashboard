@@ -13,6 +13,7 @@
   --breakpoint-xs: 480px;
   --breakpoint-laptop: 1245px;
   --breakpoint-allProduct: 680px;
+  --breakpoint-orderDetail: 922px;
 }
 
 @theme inline {

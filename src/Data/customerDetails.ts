@@ -8,6 +8,8 @@ export interface CustomerDetailsType {
     email: string;
     phone: string;
     address: string;
+    shipping: string;
+    paymentMethod: string;
   };
   paymentInfo: {
     method: string;
@@ -25,14 +27,16 @@ export interface CustomerDetailsType {
 
 export const CustomerDetails: CustomerDetailsType[] = [
   {
-    orderId: 25422,
+    orderId: 25426,
     status: "Pending",
     dateRange: "Feb 16,2022 - Feb 20,2022",
     customer: {
       fullName: "Jane Cooper",
       email: "janecooper@gmail.com",
       phone: "+900 231 1212",
-      address: "Santa Ana, Illinois, 85342...",
+      address: "Santa Ana, illinois 85342 2345 Westheimer Rd. Block 9A",
+      shipping: "Next express",
+      paymentMethod: "Paypal",
     },
     paymentInfo: {
       method: "Paypal",
@@ -40,8 +44,8 @@ export const CustomerDetails: CustomerDetailsType[] = [
       businessName: "Jane Cooper",
     },
     products: [
-      { name: "Adidas Ultra Boost", orderId: 25421, quantity: 2, price: 800.4 },
-      { name: "Adidas Ultra Boost", orderId: 25421, quantity: 2, price: 800.4 },
+      { name: "Adidas Ultra Boost", orderId: 25426, quantity: 2, price: 800.4 },
+      { name: "Adidas Ultra Boost", orderId: 25426, quantity: 2, price: 800.4 },
     ],
   },
 ];

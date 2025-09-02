@@ -13,7 +13,7 @@ const RecentOrdersTableContentRow: React.FC<
     <tr
       style={{ padding: "30px" }}
       className="text-center text-[14px] border-b border-gray-300 hover:cursor-pointer"
-      onClick={() => navigate(`/product-details/${order.orderId}`)}
+      onClick={() => navigate(`/orders-detail/${order.orderId}`)}
     >
       <td className="text-start">
         <input type="checkbox" name="" id="" />

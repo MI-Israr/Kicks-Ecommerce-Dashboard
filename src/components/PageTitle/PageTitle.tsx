@@ -16,7 +16,9 @@ const PageTitle: React.FC<headerTitle> = ({
   return (
     <div className="flex items-center justify-between w-[100%]">
       <LeftSide title={title} subTitle={subTitle} />
-      {rightSideType === "date" && <RightSideDate />}
+      {rightSideType === "date" && (
+        <RightSideDate dateRange="Aug 20, 2025 - Aug 25, 2025" />
+      )}
       {rightSideType === "button" && <RightSideButton />}
     </div>
   );

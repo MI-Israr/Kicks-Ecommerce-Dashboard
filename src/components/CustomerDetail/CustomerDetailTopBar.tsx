@@ -1,11 +1,16 @@
 import CustomerDetailIdBar from "./CustomerDetailIdBar";
 import CustomerDetailStatusBar from "./CustomerDetailStatusBar";
+import type { CustomerDetailsType } from "@/Data/customerDetails";
 
-const CustomerDetailTopBar = () => {
+interface Props {
+  order: CustomerDetailsType;
+}
+
+const CustomerDetailTopBar: React.FC<Props> = ({ order }) => {
   return (
-    <div>
-      <CustomerDetailIdBar />
-      <CustomerDetailStatusBar />
+    <div className="flex flex-col gap-4">
+      <CustomerDetailIdBar orderId={order.orderId} status={order.status} />
+      <CustomerDetailStatusBar dateRange={order.dateRange} />
     </div>
   );
 };
