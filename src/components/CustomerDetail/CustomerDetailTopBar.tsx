@@ -9,7 +9,7 @@ interface Props {
 const CustomerDetailTopBar: React.FC<Props> = ({ order }) => {
   return (
     <div className="flex flex-col gap-4">
-      <CustomerDetailIdBar orderId={order.orderId} status={order.status} />
+      <CustomerDetailIdBar orderId={order.orderId} />
       <CustomerDetailStatusBar dateRange={order.dateRange} />
     </div>
   );

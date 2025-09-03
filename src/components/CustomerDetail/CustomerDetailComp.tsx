@@ -10,7 +10,7 @@ const CustomerDetail = () => {
   if (!order) return <h2 className="text-2xl">Order not found</h2>;
 
   return (
-    <div className="w-[100%] !px-2 !py-4 orderDetail:!px-4 orderDetail:!py-6 bg-white rounded-xl">
+    <div className="w-[100%] !px-2 !py-4 md:!px-4 md:!py-6 bg-white rounded-2xl">
       <CustomerDetailTopBar order={order} />
       <CustomerDetailBottomContent order={order} />
     </div>

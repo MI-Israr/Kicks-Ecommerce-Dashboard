@@ -28,7 +28,10 @@ export const productSchema = Yup.object({
     .min(10, "Description should be at least 10 characters")
     .required("Description is required"),
   category: Yup.string()
-    .oneOf(["Sneaker", "Runner", "Casual"], "Invalid category")
+    .oneOf(
+      ["Sneaker", "Runner", "Golf", "Hiking", "Football", "Baseball"],
+      "Invalid category"
+    )
     .required("Category is required"),
   sku: Yup.number()
     .typeError("SKU must be a number")

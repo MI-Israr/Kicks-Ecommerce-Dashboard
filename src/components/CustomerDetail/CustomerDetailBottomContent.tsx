@@ -57,7 +57,7 @@ const CustomerDetailBottomContent: React.FC<Props> = ({ order }) => {
     },
   ];
   return (
-    <div className="grid allProduct:grid-cols-2 orderDetail:grid-cols-3  allProduct:grid-rows-2 gap-4 !mt-4">
+    <div className="grid allProduct:grid-cols-2 orderDetail:grid-cols-3 allProduct:grid-rows-2 gap-4 !mt-4">
       {cards.map((card, idx) => (
         <CustomerDetailCard key={idx} {...card} />
       ))}

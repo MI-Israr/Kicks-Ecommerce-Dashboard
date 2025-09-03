@@ -2,6 +2,7 @@ import type { FormikProps } from "formik";
 import type { RegisterFormValues } from "./Register";
 import RegisterSocialButtons from "./RegisterSocialButtons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 interface RegisterRightProps {
   formik: FormikProps<RegisterFormValues>;
@@ -118,9 +119,11 @@ const RegisterRight: React.FC<RegisterRightProps> = ({ formik }) => {
             </span>
           </label>
 
-          <button type="submit" className="register-btn">
-            {islogin ? "LOGIN " : "REGISTER "}→
-          </button>
+          <Link to="/">
+            <button type="submit" className="register-btn">
+              {islogin ? "LOGIN " : "REGISTER "}→
+            </button>
+          </Link>
           <p className="already">
             {islogin ? "create an " : "already have "}
             account

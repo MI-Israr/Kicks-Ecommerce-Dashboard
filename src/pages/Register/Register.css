@@ -66,8 +66,11 @@
 
 .social-btn {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 10px;
   padding: 13px 10px 10px 10px;
   background: white;
   cursor: pointer;

@@ -9,11 +9,15 @@ const RecentOrdersTableContent = () => {
     ? recentOrders.filter((order) => order.status === filter)
     : recentOrders;
   return (
-    <tbody>
+    <>
       {filteredOrders.map((order, index) => (
-        <RecentOrdersTableContentRow order={order} key={index} />
+        <RecentOrdersTableContentRow
+          order={order}
+          key={index}
+          showRecentOrderFields={true}
+        />
       ))}
-    </tbody>
+    </>
   );
 };
 

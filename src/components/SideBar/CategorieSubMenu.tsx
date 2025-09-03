@@ -6,7 +6,7 @@ import CategorieSubMenuButton from "./CategorieSubMenuButton";
 const CategorieSubMenu = () => {
   const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
   return (
-    <div className="submenu  ">
+    <div className="submenu ">
       <CategorieSubMenuButton
         isCategoriesOpen={isCategoriesOpen}
         setIsCategoriesOpen={setIsCategoriesOpen}

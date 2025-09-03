@@ -11,6 +11,7 @@ import { ChevronRight, LogOut } from "lucide-react";
 import ArrowDown from "/src/assets/down.svg";
 import ArrowUp from "/src/assets/arrow-up.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function AdminDropdown() {
   const [opened, setOpened] = useState(false);
@@ -41,10 +42,12 @@ export function AdminDropdown() {
           <span>Change Password</span>
           <ChevronRight className="h-4 w-4 text-gray-500" />
         </DropdownMenuItem>
-        <DropdownMenuItem className="flex items-center justify-between cursor-pointer text-red-600 focus:text-red-700 uppercase">
-          <span>Log Out</span>
-          <LogOut className="h-4 w-4" />
-        </DropdownMenuItem>
+        <Link to="/register">
+          <DropdownMenuItem className="flex items-center justify-between cursor-pointer text-red-600 focus:text-red-700 uppercase">
+            <span>Log Out</span>
+            <LogOut className="h-4 w-4" />
+          </DropdownMenuItem>
+        </Link>
       </DropdownMenuContent>
     </DropdownMenu>
   );

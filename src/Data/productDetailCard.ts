@@ -1,4 +1,10 @@
-type Tcategories = "Sneaker" | "Runner" | "Casual";
+type Tcategories =
+  | "Sneaker"
+  | "Runner"
+  | "Golf"
+  | "Hiking"
+  | "Football"
+  | "Baseball";
 
 export type productDetailCardType = {
   id: number;
@@ -20,7 +26,7 @@ export type productDetailCardType = {
 export type ProductFormValues = {
   title: string;
   summary: string;
-  category: "Sneaker" | "Runner" | "Casual";
+  category: "Sneaker" | "Runner" | "Golf" | "Hiking" | "Football" | "Baseball";
   sku: number;
   regularPrice: number;
   stockQuantity: number;
@@ -94,7 +100,7 @@ export const productDetailCard: productDetailCardType[] = [
     id: 5,
     img: "/src/assets/sneaker-5.png",
     title: "UltraBoost Cleats ",
-    category: "Sneaker",
+    category: "Hiking",
     regularPrice: 140,
     summary: "Long distance running requires a lot from athletes.",
     sales: 1269,
@@ -109,7 +115,97 @@ export const productDetailCard: productDetailCardType[] = [
     id: 6,
     img: "/src/assets/sneaker-6.png",
     title: "Forum Exhibit Low",
+    category: "Golf",
+    regularPrice: 140,
+    summary: "Long distance running requires a lot from athletes.",
+    sales: 1269,
+    remaining: 1269,
+    sku: 25425,
+    brandName: "Addidas",
+    stockQuantity: 21,
+    salesPrice: 45,
+    tags: ["Adidas", "Shoes", "Sneakers", "Ultraboost"],
+  },
+  {
+    id: 7,
+    img: "/src/assets/sneaker-1.png",
+    title: "Adidas Ultra boost",
     category: "Sneaker",
+    regularPrice: 140,
+    summary: "Long distance running requires a lot from athletes.",
+    sales: 1269,
+    remaining: 1269,
+    sku: 25425,
+    brandName: "Addidas",
+    stockQuantity: 21,
+    salesPrice: 45,
+    tags: ["Adidas", "Shoes", "Sneakers", "Ultraboost"],
+  },
+  {
+    id: 8,
+    img: "/src/assets/sneaker-2.png",
+    title: "Adidas Ultra boost",
+    category: "Sneaker",
+    regularPrice: 140,
+    summary: "Long distance running requires a lot from athletes.",
+    sales: 1269,
+    remaining: 1269,
+    sku: 25425,
+    brandName: "Addidas",
+    stockQuantity: 21,
+    salesPrice: 45,
+    tags: ["Adidas", "Shoes", "Sneakers", "Ultraboost"],
+  },
+  {
+    id: 9,
+    img: "/src/assets/sneaker-3.png",
+    title: "Adidas Ultra boost",
+    category: "Sneaker",
+    regularPrice: 140,
+    summary: "Long distance running requires a lot from athletes.",
+    sales: 1269,
+    remaining: 1269,
+    sku: 25425,
+    brandName: "Addidas",
+    stockQuantity: 21,
+    salesPrice: 45,
+    tags: ["Adidas", "Shoes", "Sneakers", "Ultraboost"],
+  },
+  {
+    id: 10,
+    img: "/src/assets/runner-4.png",
+    title: "Adizero sl Running",
+    category: "Runner",
+    regularPrice: 140,
+    summary: "Long distance running requires a lot from athletes.",
+    sales: 1269,
+    remaining: 1269,
+    sku: 25425,
+    brandName: "Addidas",
+    stockQuantity: 21,
+    salesPrice: 45,
+    tags: ["Adidas", "Shoes", "Sneakers", "Ultraboost"],
+  },
+  {
+    id: 11,
+    img: "/src/assets/sneaker-5.png",
+    title: "UltraBoost Cleats ",
+    category: "Hiking",
+    regularPrice: 140,
+    summary: "Long distance running requires a lot from athletes.",
+    sales: 1269,
+    remaining: 1269,
+    sku: 25425,
+    brandName: "Addidas",
+    stockQuantity: 21,
+    salesPrice: 45,
+    tags: ["Adidas", "Shoes", "Sneakers", "Ultraboost"],
+  },
+  {
+    id: 12,
+    img: "/src/assets/sneaker-6.png",
+    title: "Forum Exhibit Low",
+    category: "Golf",
     regularPrice: 140,
     summary: "Long distance running requires a lot from athletes.",
     sales: 1269,
