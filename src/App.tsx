@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-// import Register from "./pages/Register/Register";
 import HomePage from "./pages/HomePage/HomePage";
 import AllProducts from "./pages/All Products/AllProducts";
 import OrdersList from "./pages/Orders List/OrdersList";
@@ -19,7 +18,6 @@ function App() {
         <Route path="orders-detail/:orderId" element={<OrderDetail />} />
         <Route path="product-details/:id" element={<ProductDetails />} />
       </Route>
-
       <Route path="register" element={<Register />} />
     </Routes>
   );
